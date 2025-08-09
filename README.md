@@ -1,87 +1,88 @@
-# Kids-Screens
-The goal is to uncover how kids in India are using screens and what can be done to manage their screen time better.
-📍 Project Overview
-Digital Kids 2025 explores how children in India use digital devices in their daily lives. With increasing access to smartphones, tablets, and online learning tools, screen time has become a key factor influencing children's development, health, and learning. This project analyzes screentime habits, usage patterns, and influencing factors to offer insights that can support healthier digital behaviors.
+# 📱 Kids-Screens
 
-🎯 Goal
-To analyze screentime behavior among Indian children aged 5–16.
+**Understanding and managing digital screen time for kids in India**  
 
-To identify patterns and risk factors related to excessive or unstructured screen usage.
+The **Digital Kids 2025** project explores how children in India are using smartphones, tablets, computers, and other digital devices in their daily lives. With increased access to online learning, entertainment, and social platforms, understanding screen time habits is crucial for promoting healthy digital behavior.
 
-To deliver actionable insights for parents, educators, healthcare professionals, and policymakers.
+---
 
-📦 Repository Structure: sql-database/
-This repository provides complete coverage of a data pipeline — from acquisition to reporting — using SQL and Python.
+## 📍 Project Overview
 
-pgsql
-Copy
-Edit
-sql-database/
-├── README.md                  # Project overview and documentation
-├── data/
-│   ├── raw/                   # Raw dataset files
-│   └── processed/             # Cleaned and transformed data
-├── database/
-│   ├── digital_kids_schema.sql   # SQL file to create the database schema
-│   └── ERD.png                   # Entity-Relationship Diagram
-├── notebooks/
-│   ├── 01_data_analysis.ipynb    # Jupyter notebook with full analysis and report
-│   └── other_notebooks/          # (Optional) Additional notebooks for EDA, modeling, etc.
-├── python/
-│   ├── data_acquisition.py       # Python functions to acquire data
-│   ├── data_cleaning.py          # Python functions to clean and prepare data
-│   ├── data_loading.py           # Python functions to load data into SQL database
-│   └── utils.py                  # Utility functions
-├── sql/
-│   ├── queries.sql               # Compilation of all SQL queries used in the project
-└── visuals/
-    └── charts/                   # Generated visualizations
+This project investigates:
+- Screen time usage patterns among children aged **8–18**
+- Factors influencing daily screen habits
+- The relationship between screen use, health, and learning outcomes
+
+We aim to provide actionable insights for **parents, educators, healthcare professionals, and policymakers**.
+
+---
+
+## 🎯 Goals
+
+1. Analyze screentime behavior among Indian children.
+2. Identify patterns and risk factors related to excessive/unstructured screen use.
+3. Recommend strategies for **healthier digital engagement**.
+
+---
+
+## 📂 Repository Structure
+
+```plaintext
+Kids-Screens/
+├── .gitignore                    # Files/folders excluded from version control
+├── 1_Data_analysis/              # Scripts, notebooks, or reports for analysis
+├── 2_Visualizations_chart/       # Generated charts and plots
+├── SQL_queries.sql               # Main SQL queries for analysis
+├── SQL_queries_1.sql             # Additional SQL queries
+├── SQL_temp_table_queries.sql    # SQL queries for temp table processing
+├── your_database/                # Database files or assets
 🧪 Hypotheses
-Older kids (12–16) have higher screen time than younger ones (5–11).
+📊 Age Factor: Older kids (12–16) have more screen time than younger ones (5–11).
 
-Entertainment-focused screen use correlates with higher total screen time.
+🎬 Entertainment: Entertainment-heavy usage correlates with higher total screen time.
 
-Screen use after 9 PM negatively affects sleep quality.
+🌙 Late Usage: Screen use after 9 PM impacts sleep quality.
 
-Parental monitoring leads to reduced screen time.
+👀 Parental Monitoring: Active monitoring reduces daily screen time.
 
-Personal device ownership increases screen time.
+📱 Device Ownership: Personal device ownership increases screen usage.
 
-🛠️ Pipeline Stages
-Data Acquisition: Collect and load the dataset from Kaggle into local storage.
+🔄 Data Pipeline
+Data Acquisition – Import dataset from Kaggle.
 
-Data Transformation: Clean, preprocess, and structure the data using Python scripts.
+Data Transformation – Clean and preprocess data (1_Data_analysis/).
 
-Data Loading: Create an SQL database schema and load the processed data.
+Data Loading – Store data in SQL database (your_database/).
 
-Analysis: Run descriptive statistics and SQL queries to test hypotheses.
+Analysis – Run SQL queries (SQL_queries*.sql) to test hypotheses.
 
-Reporting: Present findings in a clean, well-structured Jupyter notebook with visualizations.
+Visualization – Generate charts in (2_Visualizations_chart/).
 
 📈 Key Metrics
 Average daily screen time
 
 Screen time by purpose and age group
 
-Impact of device type and bedtime usage
+Effect of device type and late-night usage
 
 Sleep quality score (if available)
 
 📊 Dataset
-Source: Kaggle - Indian Kids Screentime 2025
+Source: Kaggle – Indian Kids Screentime 2025
+
+Type: Survey-based dataset
+
+Format: CSV
 
 🧩 Future Work
-Predictive modeling to estimate screen time based on usage habits
+🧮 Predictive modeling to estimate screen time from behavior patterns
 
-Clustering kids by behavior patterns
+📊 Clustering children into usage profiles
 
-Designing a digital wellness scoring system
+❤️ Digital wellness scoring system
 
 📬 Contact
-Feel free to connect for feedback or collaboration:
-
 Author: Varsha Maurya
+📧 Email: varsha.eminent@gmail.com
+🔗 LinkedIn: [Varsha Maurya on LinkedIn](https://www.linkedin.com/in/varsha-maurya/)
 
-Email: varsha.eminent@gmail.com
-
-LinkedIn: https://www.linkedin.com/in/varsha-maurya/
